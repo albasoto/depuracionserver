@@ -7,24 +7,14 @@
 
 module.exports = {
   
-
-  /**
-   * `EntidadController.id()`
-   */
-  id: async function (req, res) {
-    return res.json({
-      todo: 'id() is not implemented yet!'
-    });
+  count: async function (req, res) {
+    var query = req.query
+    if(query.where){
+      query.where = JSON.parse(query.where)
+    }
+    var count =  await Entidad.count(query)
+    return res.json({count: count});
   },
-
-  /**
-   * `EntidadController.nombre()`
-   */
-  nombre: async function (req, res) {
-    return res.json({
-      todo: 'nombre() is not implemented yet!'
-    });
-  }
 
 };
 

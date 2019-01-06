@@ -6,7 +6,10 @@ module.exports.routes = {
 
   'get /catalogo/count': 'Catalogo.count',
 
-  'get /catalogo/countsearch': 'Catalogo.countsearch'
+
+  'get /expresion/count': 'Expresion.count',
+
+  'get /entidad/count': 'Entidad.count'
 
 
 };

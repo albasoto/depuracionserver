@@ -6,6 +6,22 @@
  */
 
 module.exports = {
+
+  count: async function (req, res) {
+
+    //se alamacena los parametros enviados desde el cliente
+    var query = req.query
+
+
+    if(query.where){
+      query.where = JSON.parse(query.where)
+    }
+
+
+    var count =  await Expresion.count(query)
+    return res.json({count: count});
+  },
+
   
 
   /**

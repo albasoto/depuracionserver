@@ -12,7 +12,11 @@ module.exports = {
    * `CatalogoController.id()`
    */
   count: async function (req, res) {
-    var count =  await Catalogo.count()
+    var query = req.query
+    if(query.where){
+      query.where = JSON.parse(query.where)
+    }
+    var count =  await Catalogo.count(query)
     return res.json({count: count});
   },
 

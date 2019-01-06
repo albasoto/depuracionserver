@@ -8,7 +8,7 @@ module.exports = {
 
     esRequerido: { type: 'boolean', defaultsTo: false },
 
-    tipo: { type: 'string' ,required: true, isIn: ['catalogo', 'boolean', 'string', 'number', 'columna', 'expresion']},
+    tipo: { type: 'string' , isIn: ['catalogo', 'boolean', 'string', 'number', 'columna', 'expresion']},
 
     expresion: { model: 'expresion' },
 
