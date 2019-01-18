@@ -9,7 +9,9 @@ module.exports.routes = {
 
   'get /expresion/count': 'Expresion.count',
 
-  'get /entidad/count': 'Entidad.count'
+  'get /entidad/count': 'Entidad.count',
+
+  'get /version/count': 'Version.count'
 
 
 };

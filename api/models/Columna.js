@@ -6,7 +6,7 @@ module.exports = {
 
     nombre: { type: 'string', required: true },
 
-    esRequerido: { type: 'boolean', defaultsTo: false },
+    esRequerido: { type: 'boolean', defaultsTo: true },
 
     tipo: { type: 'string' , isIn: ['catalogo', 'boolean', 'string', 'number', 'columna', 'expresion']},
 

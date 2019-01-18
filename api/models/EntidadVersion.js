@@ -5,11 +5,13 @@ module.exports = {
 
     version: { model: 'version' },
     columna: { model: 'columna' },
-    numeroHoja: {type: 'number'},
-    letraColumna: {type: 'string'},
+    numeroHoja: { type: 'number' },
+    letraColumna: { type: 'string' },
 
 
   },
+
+ 
 
 };
 
